@@ -15,7 +15,7 @@ describe PagesController do
       it 'returns http success' do
         VCR.use_cassette('twitter/user_timeline') do
           get :index
-          response.should be_success
+          expect(response).to be_success
         end
       end
     end
