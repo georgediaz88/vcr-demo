@@ -1,0 +1,149 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/statuses/user_timeline.json?count=5&screen_name=@rails
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.1.1
+      Authorization:
+      - OAuth oauth_consumer_key="<ConsumerKey>", oauth_nonce="1e804bd2a235533547ab1d8449efbeca",
+        oauth_signature="7Kljoho9IZBp4HFOR91kBaf%2BBQo%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1387084123", oauth_token="<AccessToken>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '2971'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Sun, 15 Dec 2013 05:08:43 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 15 Dec 2013 05:08:43 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A138708412366063165; Domain=.twitter.com; Path=/; Expires=Tue,
+        15-Dec-2015 05:08:43 UTC
+      - lang=en
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '162'
+      X-Rate-Limit-Reset:
+      - '1387084221'
+      X-Tfe-Logging-1-Request-Category:
+      - API
+      X-Tfe-Logging-2-Request-Category:
+      - API
+      X-Transaction:
+      - 5347e08d8b588c64
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '[{"created_at":"Wed Dec 04 19:10:38 +0000 2013","id":408312407678025728,"id_str":"408312407678025728","text":"RT
+        @bitsweat: One weird trick to split up monolithic Ruby classes, discovered
+        by stay-at-home programmer https:\/\/t.co\/mw3G64KywL","source":"\u003ca href=\"http:\/\/itunes.apple.com\/us\/app\/twitter\/id409789998?mt=12\"
+        rel=\"nofollow\"\u003eTwitter for Mac\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":3116191,"id_str":"3116191","name":"Ruby
+        on Rails","screen_name":"rails","location":"","description":"Web development
+        that doesn''t hurt","url":"http:\/\/t.co\/3rEOOSt3oZ","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/3rEOOSt3oZ","expanded_url":"http:\/\/rubyonrails.org","display_url":"rubyonrails.org","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":61082,"friends_count":24,"listed_count":2856,"created_at":"Sun
+        Apr 01 10:20:11 +0000 2007","favourites_count":0,"utc_offset":-21600,"time_zone":"Central
+        Time (US & Canada)","geo_enabled":false,"verified":false,"statuses_count":352,"lang":"en","contributors_enabled":false,"is_translator":false,"profile_background_color":"EBEBEB","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme7\/bg.gif","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme7\/bg.gif","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/378800000296761640\/2e69482e09113a93ccdd109c36f7fca7_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/378800000296761640\/2e69482e09113a93ccdd109c36f7fca7_normal.png","profile_link_color":"990000","profile_sidebar_border_color":"DFDFDF","profile_sidebar_fill_color":"F3F3F3","profile_text_color":"333333","profile_use_background_image":true,"default_profile":false,"default_profile_image":false,"following":true,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweeted_status":{"created_at":"Wed
+        Dec 04 18:59:53 +0000 2013","id":408309700778655744,"id_str":"408309700778655744","text":"One
+        weird trick to split up monolithic Ruby classes, discovered by stay-at-home
+        programmer https:\/\/t.co\/mw3G64KywL","source":"web","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":9462972,"id_str":"9462972","name":"Jeremy
+        Kemper","screen_name":"bitsweat","location":"Phoenix, AZ","description":"Building
+        it: 37signals, Ruby on Rails","url":"http:\/\/t.co\/8LvrB9lMoC","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/8LvrB9lMoC","expanded_url":"http:\/\/bitsweat.net","display_url":"bitsweat.net","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":6905,"friends_count":996,"listed_count":512,"created_at":"Mon
+        Oct 15 20:57:25 +0000 2007","favourites_count":261,"utc_offset":-25200,"time_zone":"Arizona","geo_enabled":false,"verified":false,"statuses_count":2232,"lang":"en","contributors_enabled":false,"is_translator":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/378800000304627384\/0c9b57d782667f55214c075c996cf731_normal.jpeg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/378800000304627384\/0c9b57d782667f55214c075c996cf731_normal.jpeg","profile_link_color":"0084B4","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":34,"favorite_count":61,"entities":{"hashtags":[],"symbols":[],"urls":[{"url":"https:\/\/t.co\/mw3G64KywL","expanded_url":"https:\/\/github.com\/37signals\/concerning","display_url":"github.com\/37signals\/conc\u2026","indices":[91,114]}],"user_mentions":[]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},"retweet_count":34,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"urls":[{"url":"https:\/\/t.co\/mw3G64KywL","expanded_url":"https:\/\/github.com\/37signals\/concerning","display_url":"github.com\/37signals\/conc\u2026","indices":[105,128]}],"user_mentions":[{"screen_name":"bitsweat","name":"Jeremy
+        Kemper","id":9462972,"id_str":"9462972","indices":[3,12]}]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},{"created_at":"Tue
+        Dec 03 19:23:01 +0000 2013","id":407953134275657728,"id_str":"407953134275657728","text":"Rails
+        3.2.16 and 4.0.2 have been released! These are security releases, so please
+        upgrade! http:\/\/t.co\/kLRT8RGTxt","source":"\u003ca href=\"http:\/\/www.echofon.com\/\"
+        rel=\"nofollow\"\u003eEchofon\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":3116191,"id_str":"3116191","name":"Ruby
+        on Rails","screen_name":"rails","location":"","description":"Web development
+        that doesn''t hurt","url":"http:\/\/t.co\/3rEOOSt3oZ","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/3rEOOSt3oZ","expanded_url":"http:\/\/rubyonrails.org","display_url":"rubyonrails.org","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":61082,"friends_count":24,"listed_count":2856,"created_at":"Sun
+        Apr 01 10:20:11 +0000 2007","favourites_count":0,"utc_offset":-21600,"time_zone":"Central
+        Time (US & Canada)","geo_enabled":false,"verified":false,"statuses_count":352,"lang":"en","contributors_enabled":false,"is_translator":false,"profile_background_color":"EBEBEB","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme7\/bg.gif","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme7\/bg.gif","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/378800000296761640\/2e69482e09113a93ccdd109c36f7fca7_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/378800000296761640\/2e69482e09113a93ccdd109c36f7fca7_normal.png","profile_link_color":"990000","profile_sidebar_border_color":"DFDFDF","profile_sidebar_fill_color":"F3F3F3","profile_text_color":"333333","profile_use_background_image":true,"default_profile":false,"default_profile_image":false,"following":true,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":322,"favorite_count":46,"entities":{"hashtags":[],"symbols":[],"urls":[{"url":"http:\/\/t.co\/kLRT8RGTxt","expanded_url":"http:\/\/weblog.rubyonrails.org\/2013\/12\/3\/Rails_3_2_16_and_4_0_2_have_been_released\/","display_url":"weblog.rubyonrails.org\/2013\/12\/3\/Rail\u2026","indices":[91,113]}],"user_mentions":[]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},{"created_at":"Mon
+        Dec 02 23:22:39 +0000 2013","id":407651054294028288,"id_str":"407651054294028288","text":"RT
+        @dhh: First ingredient to Russian Doll caching: Move local times to JavaScript.
+        @javan has open sourced our Local Time, http:\/\/t.co\/ICwF\u2026","source":"\u003ca
+        href=\"http:\/\/itunes.apple.com\/us\/app\/twitter\/id409789998?mt=12\" rel=\"nofollow\"\u003eTwitter
+        for Mac\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":3116191,"id_str":"3116191","name":"Ruby
+        on Rails","screen_name":"rails","location":"","description":"Web development
+        that doesn''t hurt","url":"http:\/\/t.co\/3rEOOSt3oZ","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/3rEOOSt3oZ","expanded_url":"http:\/\/rubyonrails.org","display_url":"rubyonrails.org","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":61082,"friends_count":24,"listed_count":2856,"created_at":"Sun
+        Apr 01 10:20:11 +0000 2007","favourites_count":0,"utc_offset":-21600,"time_zone":"Central
+        Time (US & Canada)","geo_enabled":false,"verified":false,"statuses_count":352,"lang":"en","contributors_enabled":false,"is_translator":false,"profile_background_color":"EBEBEB","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme7\/bg.gif","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme7\/bg.gif","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/378800000296761640\/2e69482e09113a93ccdd109c36f7fca7_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/378800000296761640\/2e69482e09113a93ccdd109c36f7fca7_normal.png","profile_link_color":"990000","profile_sidebar_border_color":"DFDFDF","profile_sidebar_fill_color":"F3F3F3","profile_text_color":"333333","profile_use_background_image":true,"default_profile":false,"default_profile_image":false,"following":true,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweeted_status":{"created_at":"Mon
+        Dec 02 23:20:16 +0000 2013","id":407650451807432704,"id_str":"407650451807432704","text":"First
+        ingredient to Russian Doll caching: Move local times to JavaScript. @javan
+        has open sourced our Local Time, http:\/\/t.co\/ICwF9PKeDb","source":"\u003ca
+        href=\"http:\/\/itunes.apple.com\/us\/app\/twitter\/id409789998?mt=12\" rel=\"nofollow\"\u003eTwitter
+        for Mac\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":14561327,"id_str":"14561327","name":"DHH","screen_name":"dhh","location":"Chicago,
+        USA","description":"Creator of Ruby on Rails, Partner at 37signals (Basecamp),
+        NYT Best-Selling Author of REWORK and REMOTE, and racing driver in the World
+        Endurance Championship.","url":"http:\/\/t.co\/AsTRuqjehv","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/AsTRuqjehv","expanded_url":"http:\/\/david.heinemeierhansson.com","display_url":"david.heinemeierhansson.com","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":98186,"friends_count":173,"listed_count":6104,"created_at":"Sun
+        Apr 27 20:19:25 +0000 2008","favourites_count":3,"utc_offset":-21600,"time_zone":"Central
+        Time (US & Canada)","geo_enabled":true,"verified":true,"statuses_count":17353,"lang":"en","contributors_enabled":false,"is_translator":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/2556368541\/alng5gtlmjhrdlr3qxqv_normal.jpeg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/2556368541\/alng5gtlmjhrdlr3qxqv_normal.jpeg","profile_link_color":"0084B4","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"default_profile":true,"default_profile_image":false,"following":true,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":37,"favorite_count":115,"entities":{"hashtags":[],"symbols":[],"urls":[{"url":"http:\/\/t.co\/ICwF9PKeDb","expanded_url":"http:\/\/37signals.com\/svn\/posts\/3691-basecamps-cache-friendly-local-time","display_url":"37signals.com\/svn\/posts\/3691\u2026","indices":[114,136]}],"user_mentions":[{"screen_name":"javan","name":"Javan
+        Makhmali","id":1679,"id_str":"1679","indices":[74,80]}]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},"retweet_count":37,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"urls":[],"user_mentions":[{"screen_name":"dhh","name":"DHH","id":14561327,"id_str":"14561327","indices":[3,7]},{"screen_name":"javan","name":"Javan
+        Makhmali","id":1679,"id_str":"1679","indices":[83,89]}]},"favorited":false,"retweeted":false,"lang":"en"},{"created_at":"Tue
+        Nov 19 23:30:09 +0000 2013","id":402941898341363712,"id_str":"402941898341363712","text":"RT
+        @jonleighton: I''ve finally decided spring is good enough to be called 1.0.
+        It''s taken a long time to get here! https:\/\/t.co\/TgKDy1zAmq","source":"\u003ca
+        href=\"http:\/\/itunes.apple.com\/us\/app\/twitter\/id409789998?mt=12\" rel=\"nofollow\"\u003eTwitter
+        for Mac\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":3116191,"id_str":"3116191","name":"Ruby
+        on Rails","screen_name":"rails","location":"","description":"Web development
+        that doesn''t hurt","url":"http:\/\/t.co\/3rEOOSt3oZ","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/3rEOOSt3oZ","expanded_url":"http:\/\/rubyonrails.org","display_url":"rubyonrails.org","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":61082,"friends_count":24,"listed_count":2856,"created_at":"Sun
+        Apr 01 10:20:11 +0000 2007","favourites_count":0,"utc_offset":-21600,"time_zone":"Central
+        Time (US & Canada)","geo_enabled":false,"verified":false,"statuses_count":352,"lang":"en","contributors_enabled":false,"is_translator":false,"profile_background_color":"EBEBEB","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme7\/bg.gif","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme7\/bg.gif","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/378800000296761640\/2e69482e09113a93ccdd109c36f7fca7_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/378800000296761640\/2e69482e09113a93ccdd109c36f7fca7_normal.png","profile_link_color":"990000","profile_sidebar_border_color":"DFDFDF","profile_sidebar_fill_color":"F3F3F3","profile_text_color":"333333","profile_use_background_image":true,"default_profile":false,"default_profile_image":false,"following":true,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweeted_status":{"created_at":"Tue
+        Nov 19 23:16:26 +0000 2013","id":402938447473541120,"id_str":"402938447473541120","text":"I''ve
+        finally decided spring is good enough to be called 1.0. It''s taken a long
+        time to get here! https:\/\/t.co\/TgKDy1zAmq","source":"web","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":14330565,"id_str":"14330565","name":"Jon
+        Leighton","screen_name":"jonleighton","location":"London","description":"Ruby
+        programmer. Rails core team member. Technical Director at @loco2. I really
+        like rock climbing, which I blog about at http:\/\/t.co\/2N2WehuW16.","url":"http:\/\/t.co\/mNO99wATHV","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/mNO99wATHV","expanded_url":"http:\/\/jonathanleighton.com\/","display_url":"jonathanleighton.com","indices":[0,22]}]},"description":{"urls":[{"url":"http:\/\/t.co\/2N2WehuW16","expanded_url":"http:\/\/climberjon.wordpress.com\/","display_url":"climberjon.wordpress.com","indices":[122,144]}]}},"protected":false,"followers_count":2404,"friends_count":158,"listed_count":131,"created_at":"Tue
+        Apr 08 08:14:17 +0000 2008","favourites_count":3,"utc_offset":0,"time_zone":"London","geo_enabled":false,"verified":false,"statuses_count":2611,"lang":"en","contributors_enabled":false,"is_translator":false,"profile_background_color":"DBCAAD","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/1199127506\/New_square_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/1199127506\/New_square_normal.jpg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/14330565\/1353454037","profile_link_color":"962D35","profile_sidebar_border_color":"FFFFFF","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":false,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":20,"favorite_count":37,"entities":{"hashtags":[],"symbols":[],"urls":[{"url":"https:\/\/t.co\/TgKDy1zAmq","expanded_url":"https:\/\/github.com\/jonleighton\/spring","display_url":"github.com\/jonleighton\/sp\u2026","indices":[97,120]}],"user_mentions":[]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},"retweet_count":20,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"urls":[{"url":"https:\/\/t.co\/TgKDy1zAmq","expanded_url":"https:\/\/github.com\/jonleighton\/spring","display_url":"github.com\/jonleighton\/sp\u2026","indices":[114,137]}],"user_mentions":[{"screen_name":"jonleighton","name":"Jon
+        Leighton","id":14330565,"id_str":"14330565","indices":[3,15]}]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},{"created_at":"Tue
+        Nov 19 23:10:59 +0000 2013","id":402937075164389376,"id_str":"402937075164389376","text":"RT
+        @dhh: Basecamp is now running rails\/master in production. Rails 4.1.0.beta1
+        shouldn''t be too far off.","source":"\u003ca href=\"http:\/\/itunes.apple.com\/us\/app\/twitter\/id409789998?mt=12\"
+        rel=\"nofollow\"\u003eTwitter for Mac\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":3116191,"id_str":"3116191","name":"Ruby
+        on Rails","screen_name":"rails","location":"","description":"Web development
+        that doesn''t hurt","url":"http:\/\/t.co\/3rEOOSt3oZ","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/3rEOOSt3oZ","expanded_url":"http:\/\/rubyonrails.org","display_url":"rubyonrails.org","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":61082,"friends_count":24,"listed_count":2856,"created_at":"Sun
+        Apr 01 10:20:11 +0000 2007","favourites_count":0,"utc_offset":-21600,"time_zone":"Central
+        Time (US & Canada)","geo_enabled":false,"verified":false,"statuses_count":352,"lang":"en","contributors_enabled":false,"is_translator":false,"profile_background_color":"EBEBEB","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme7\/bg.gif","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme7\/bg.gif","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/378800000296761640\/2e69482e09113a93ccdd109c36f7fca7_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/378800000296761640\/2e69482e09113a93ccdd109c36f7fca7_normal.png","profile_link_color":"990000","profile_sidebar_border_color":"DFDFDF","profile_sidebar_fill_color":"F3F3F3","profile_text_color":"333333","profile_use_background_image":true,"default_profile":false,"default_profile_image":false,"following":true,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweeted_status":{"created_at":"Tue
+        Nov 19 23:10:22 +0000 2013","id":402936920369414144,"id_str":"402936920369414144","text":"Basecamp
+        is now running rails\/master in production. Rails 4.1.0.beta1 shouldn''t be
+        too far off.","source":"\u003ca href=\"http:\/\/itunes.apple.com\/us\/app\/twitter\/id409789998?mt=12\"
+        rel=\"nofollow\"\u003eTwitter for Mac\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":14561327,"id_str":"14561327","name":"DHH","screen_name":"dhh","location":"Chicago,
+        USA","description":"Creator of Ruby on Rails, Partner at 37signals (Basecamp),
+        NYT Best-Selling Author of REWORK and REMOTE, and racing driver in the World
+        Endurance Championship.","url":"http:\/\/t.co\/AsTRuqjehv","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/AsTRuqjehv","expanded_url":"http:\/\/david.heinemeierhansson.com","display_url":"david.heinemeierhansson.com","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":98186,"friends_count":173,"listed_count":6104,"created_at":"Sun
+        Apr 27 20:19:25 +0000 2008","favourites_count":3,"utc_offset":-21600,"time_zone":"Central
+        Time (US & Canada)","geo_enabled":true,"verified":true,"statuses_count":17353,"lang":"en","contributors_enabled":false,"is_translator":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/2556368541\/alng5gtlmjhrdlr3qxqv_normal.jpeg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/2556368541\/alng5gtlmjhrdlr3qxqv_normal.jpeg","profile_link_color":"0084B4","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"default_profile":true,"default_profile_image":false,"following":true,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":40,"favorite_count":29,"entities":{"hashtags":[],"symbols":[],"urls":[],"user_mentions":[]},"favorited":false,"retweeted":false,"lang":"en"},"retweet_count":40,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"urls":[],"user_mentions":[{"screen_name":"dhh","name":"DHH","id":14561327,"id_str":"14561327","indices":[3,7]}]},"favorited":false,"retweeted":false,"lang":"en"}]'
+    http_version: 
+  recorded_at: Sun, 15 Dec 2013 05:08:43 GMT
+recorded_with: VCR 2.8.0

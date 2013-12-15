@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/statuses/user_timeline.json?count=5&screen_name=@rdakfjdkfsf
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.1.1
+      Authorization:
+      - OAuth oauth_consumer_key="<ConsumerKey>", oauth_nonce="2d3032753c2de1c59bfd5b30da8490ba",
+        oauth_signature="DUeduql6GyLlkDTQMfunBpcxX2I%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1387137382", oauth_token="<AccessToken>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '92'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 15 Dec 2013 19:56:23 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 15 Dec 2013 19:56:23 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A138713738323425411; Domain=.twitter.com; Path=/; Expires=Tue,
+        15-Dec-2015 19:56:23 UTC
+      - lang=en
+      Status:
+      - 404 Not Found
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '179'
+      X-Rate-Limit-Reset:
+      - '1387138283'
+      X-Tfe-Logging-1-Request-Category:
+      - API
+      X-Tfe-Logging-2-Request-Category:
+      - API
+      X-Transaction:
+      - 2bc8f3e290a57735
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"message":"Sorry, that page does not exist","code":34}]}'
+    http_version: 
+  recorded_at: Sun, 15 Dec 2013 19:56:22 GMT
+recorded_with: VCR 2.8.0

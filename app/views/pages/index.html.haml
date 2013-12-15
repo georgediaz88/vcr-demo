@@ -1,0 +1,7 @@
+%h1 Timeline
+%h4.subheader= "#{@user} Tweets:"
+
+- @tweets.each do |tweet|
+  %blockquote
+    = tweet.text
+    %cite= link_to tweet.user.screen_name, "https://www.twitter.com/#{tweet.user.screen_name}"

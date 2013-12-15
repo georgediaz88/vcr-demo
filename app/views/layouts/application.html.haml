@@ -1,0 +1,57 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
+    %title= content_for?(:title) ? yield(:title) : "VCR Demo"
+    = stylesheet_link_tag    "application"
+    = javascript_include_tag "vendor/modernizr"
+    = csrf_meta_tags
+
+  .off-canvas-wrap
+    .inner-wrap
+      %nav.tab-bar
+        %section.left-small
+          %a.left-off-canvas-toggle.menu-icon
+            %span
+        %section.middle.tab-bar-section
+          %h1.title VCR-Demo
+        %section.right-small
+          %a.right-off-canvas-toggle.menu-icon
+            %span
+      %aside.left-off-canvas-menu
+        %ul.off-canvas-list
+          %li
+            %label Links
+          %li
+            %a{href: 'https://dev.twitter.com/', target: '_blank'}
+              Twitter API
+          %li
+            %a{href: 'http://foundation.zurb.com/docs/', target: '_blank'}
+              Foundation
+          %li
+            %a{href: 'http://marnen.github.io/webmock-presentation/webmock.html#(1)', target: '_blank'}
+              Slides
+          %li
+            %a{href: 'http://railscasts.com/episodes/291-testing-with-vcr', target: '_blank' }
+              VCR Railscast
+          %li
+            %a{href: 'https://www.relishapp.com/vcr/vcr/v/2-8-0/docs/getting-started', target: '_blank' }
+              Relish Documentation
+          %li
+            %a{href: 'https://github.com/vcr/vcr/issues/238', target: '_blank' }
+              Webmock over FakeWeb
+      %aside.right-off-canvas-menu
+        %ul.off-canvas-list
+          %li
+            %label Users
+          %li
+            %a{href: '#'} George Diaz
+      %section.main-section
+        = javascript_include_tag 'application'
+        .row
+          .small-8.columns
+            = yield
+          .small-4.columns
+            %h5.subheader Utilizing the Twitter API
+      %a.exit-off-canvas
