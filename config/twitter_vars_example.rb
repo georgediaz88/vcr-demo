@@ -1,4 +1,4 @@
-# Add Your Twitter Consumer Keys and rename file to twitter_vars.rb
+# Add Your Twitter Consumer Keys and rename this file to twitter_vars.rb
 ENV['consumer_key']        = ''
 ENV['consumer_secret']     = ''
 ENV['access_token']        = ''

@@ -28,4 +28,13 @@ describe PagesController do
     end
   end
 
+  # describe 'VCR up and running' do
+  #   it 'test cassette made' do
+  #     VCR.use_cassette('example', match_requests_on: [:host], record: :new_episodes) do
+  #       # Net::HTTP.get('www.google.com', '/')
+  #       Net::HTTP.get('www.chegg.com', '/')
+  #     end
+  #   end
+  # end
+
 end
